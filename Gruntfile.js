@@ -217,7 +217,8 @@ module.exports = function (grunt) {
             '*.html',
             'templates/**/*.html',
             'fonts/*',
-            'res/**'
+            'res/**',
+            'views/*' // add for angularjs views
           ]
         }, {
           expand: true,
