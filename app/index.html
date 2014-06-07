@@ -20,10 +20,8 @@
   <body ng-app="HsinchuIS">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content class="has-header">
+      <ion-content>
+        <div ng-include src="'views/main.html'"></div>
       </ion-content>
     </ion-pane>
 
@@ -42,6 +40,7 @@
     
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
 
     <!-- cordova script (this will be a 404 during development) -->

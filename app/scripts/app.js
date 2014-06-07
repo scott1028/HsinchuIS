@@ -12,4 +12,9 @@ angular.module('HsinchuIS', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-});
+})
+.when('/main', {
+  templateUrl: 'views/main.html',
+  controller: 'MainCtrl'
+})
+;
