@@ -22,13 +22,13 @@
     <ion-pane ng-controller="MainController">
       <ion-content scrollbar-y="false">
 
-        <div ng-show="page == 'select_lang'" ng-include src="'views/select_lang.html'" style="height: inherit;"></div>
+        <div ng-show="page == 'select_lang'" class="animate-hide" ng-include src="'views/select_lang.html'" style="height: inherit;"></div>
 
-        <div ng-show="page == 'sitemap'" ng-include src="'views/sitemap.html'" style="height: inherit;"></div>
+        <div ng-show="page == 'sitemap'" class="animate-hide" ng-include src="'views/sitemap.html'" style="height: inherit;"></div>
 
-        <div ng-show="page == 'about'" ng-include src="'views/about.html'" style="height: inherit;"></div>
+        <div ng-show="page == 'about'" class="animate-hide" ng-include src="'views/about.html'" style="height: inherit;"></div>
 
-        <div ng-show="page == 'search'" ng-include src="'views/search.html'" style="height: inherit;"></div>
+        <div ng-show="page == 'search'" class="animate-hide" ng-include src="'views/search.html'" style="height: inherit;"></div>
 
       </ion-content>
     </ion-pane>
@@ -60,5 +60,21 @@
             $('<style>.scroll {height: ' + height + 'px;}</style>').appendTo('body');
         })
     </script>
+
+    <style>
+        .animate-hide {
+          -webkit-transition:all linear 0.3s;
+          transition:all linear 0.3s;
+          line-height:20px;
+          opacity:1;
+          background:white;
+        }
+
+        .animate-hide.ng-hide {
+          line-height:0;
+          opacity:0;
+          padding:0 10px;
+        }
+    </style>
   </body>
 </html>
