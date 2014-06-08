@@ -18,7 +18,6 @@ angular.module('HsinchuIS', ['ionic', 'ngRoute'])
      $scope.$route = $route;
      $scope.$location = $location;
      $scope.$routeParams = $routeParams;
-     $scope.page = 'welcome';
-     $scope.bg_image = 'bg_launcher.png';
+     $scope.page = 'select_lang';
  })
 ;

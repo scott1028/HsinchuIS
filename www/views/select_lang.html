@@ -1,6 +1,6 @@
 <div class="main">
     <div style="padding: 10px;">
-        <button class="button button-positive" style="font-size: 16pt; padding: 5px; width: 150px;" onclick="location.href='menu.html'">
+        <button class="button button-positive" style="font-size: 16pt; padding: 5px; width: 150px;" ng-click="$parent.page='sitemap'">
             繁體中文
         </button>
     </div>
@@ -14,8 +14,15 @@
 
 <style>
     .main {
+        width: 100%;
+        height: 100%;
         position: relative;
         padding-top: 60%;
         text-align: center;
+    }
+
+    .main{
+        background: url(images/bg_launcher.png);
+        background-size: cover;
     }
 </style>

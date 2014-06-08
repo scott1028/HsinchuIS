@@ -20,8 +20,14 @@
   <body ng-app="HsinchuIS">
 
     <ion-pane ng-controller="MainController">
-      <ion-content class="layout">
-        <div ng-show="page == 'welcome'" ng-include src="'views/main.html'"></div>
+      <ion-content scrollbar-y="false">
+
+        <div ng-show="page == 'select_lang'" ng-include src="'views/select_lang.html'" style="height: inherit;"></div>
+
+        <div ng-show="page == 'sitemap'" ng-include src="'views/sitemap.html'" style="height: inherit;"></div>
+
+        <div ng-show="page == 'about'" ng-include src="'views/about.html'" style="height: inherit;"></div>
+
       </ion-content>
     </ion-pane>
 
@@ -46,8 +52,8 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <style>
-        .layout{
-            background: url(images/bg_launcher.png) 100% 100% no-repeat;
+        .scroll {
+            height: 100%;
         }
     </style>
   </body>

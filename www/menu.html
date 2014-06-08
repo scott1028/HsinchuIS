@@ -20,7 +20,7 @@
   <body ng-app="HsinchuIS">
 
     <ion-pane ng-controller="MainController">
-      <ion-content class="layout">
+      <ion-content class="layout" src="currentTpl" ng-click="currentTpl='/tpl.html'" ng-init="currentTpl='/tpl.html'">
         3122
       </ion-content>
     </ion-pane>
@@ -50,5 +50,9 @@
             background: url(images/bg_menu.jpg) 100% 100% no-repeat;
         }
     </style>
+
+    <script type="text/ng-template" id="/tpl.html">
+        Content of the template.
+    </script>
   </body>
 </html>
