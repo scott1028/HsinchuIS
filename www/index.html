@@ -21,6 +21,7 @@
 
     <ion-pane ng-controller="MainController">
       <ion-content scrollbar-y="false">
+
         <div ng-show="page == 'select_lang'" class="animate-hide" ng-include src="'views/select_lang.html'" style="height: inherit;"></div>
 
         <div ng-show="page == 'sitemap'" class="animate-hide" ng-include src="'views/sitemap.html'" style="height: inherit;"></div>
@@ -30,6 +31,8 @@
         <div ng-show="page == 'search'" class="animate-hide" ng-include src="'views/search.html'" style="height: inherit;"></div>
         
         <div ng-show="page == 'near_scenery_and_store'" class="animate-hide" ng-include src="'views/near_scenery_and_store.html'" style="height: inherit;"></div>
+        
+        <div ng-show="page == 'near_search'" class="animate-hide" ng-include src="'views/near_search.html'" style="height: inherit;"></div>
 
       </ion-content>
     </ion-pane>

@@ -21,9 +21,15 @@ angular.module('HsinchuIS', ['ionic', 'ngRoute'])
     $scope.page = 'select_lang';
     $scope.map = undefined;
 
-    window.tt=$scope;
+    $scope.list = function(){
+      $scope.page = 'near_search';
+    }
 
-    window.create_map=$scope.create_map=function(){
+    $scope.set_page = function(page){
+      $scope.page = page;
+    }
+
+    window.create_map = $scope.create_map=function(){
       var mapOptions = {
           center: new google.maps.LatLng(43.07493,-89.381388),
           zoom: 16,
