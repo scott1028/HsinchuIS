@@ -1,0 +1,13 @@
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+ion-content {
+  background-size: 100% !important;
+  width:100%; height: 100%;
+}
