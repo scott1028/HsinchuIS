@@ -14,10 +14,33 @@ angular.module('HsinchuIS', ['ionic', 'ngRoute'])
   });
 })
 .controller('MainController', function($scope, $route, $routeParams, $location) {
-     // init
-     $scope.$route = $route;
-     $scope.$location = $location;
-     $scope.$routeParams = $routeParams;
-     $scope.page = 'select_lang';
- })
+    // init
+    $scope.$route = $route;
+    $scope.$location = $location;
+    $scope.$routeParams = $routeParams;
+    $scope.page = 'select_lang';
+    $scope.map = undefined;
+
+    window.tt=$scope;
+
+    window.create_map=$scope.create_map=function(){
+      var mapOptions = {
+          center: new google.maps.LatLng(43.07493,-89.381388),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          streetViewControl: false
+      };
+
+      if(!$scope.map){
+        var google_map_container=$('<div></div>').css({
+          width: '100%',
+          height: '100%'
+        });
+        var map = new google.maps.Map(google_map_container[0], mapOptions);
+        $scope.map = google_map_container;
+        $scope.map.map = map;
+      }
+      return $scope.map;
+    }
+})
 ;

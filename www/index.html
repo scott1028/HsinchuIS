@@ -21,7 +21,6 @@
 
     <ion-pane ng-controller="MainController">
       <ion-content scrollbar-y="false">
-
         <div ng-show="page == 'select_lang'" class="animate-hide" ng-include src="'views/select_lang.html'" style="height: inherit;"></div>
 
         <div ng-show="page == 'sitemap'" class="animate-hide" ng-include src="'views/sitemap.html'" style="height: inherit;"></div>
@@ -29,9 +28,13 @@
         <div ng-show="page == 'about'" class="animate-hide" ng-include src="'views/about.html'" style="height: inherit;"></div>
 
         <div ng-show="page == 'search'" class="animate-hide" ng-include src="'views/search.html'" style="height: inherit;"></div>
+        
+        <div ng-show="page == 'near_scenery_and_store'" class="animate-hide" ng-include src="'views/near_scenery_and_store.html'" style="height: inherit;"></div>
 
       </ion-content>
     </ion-pane>
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true'></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- <script src="vendor/someContribJs.js"></script> -->
@@ -56,13 +59,13 @@
     <script>
         // 一開始先把裝置高度算好, 不要使用 100% 避免鍵盤出現的時候畫面變形
         $(document).ready(function(){
-            var height=$('.scroll').parent().height();
+            window.height=$('.scroll').parent().height();
             $('<style>.scroll {height: ' + height + 'px;}</style>').appendTo('body');
         })
     </script>
 
     <style>
-        .animate-hide {
+/*        .animate-hide {
           -webkit-transition:all linear 0.3s;
           transition:all linear 0.3s;
           opacity:1;
@@ -72,7 +75,7 @@
         .animate-hide.ng-hide {
           line-height:0;
           opacity:0;
-        }
+        }*/
     </style>
   </body>
 </html>
