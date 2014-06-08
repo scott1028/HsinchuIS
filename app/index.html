@@ -19,9 +19,10 @@
 
   <body ng-app="HsinchuIS">
 
-    <ion-pane>
-      <ion-content>
-        <div ng-include src="'views/main.html'"></div>
+    <ion-pane ng-controller="MainController">
+      <ion-content class="layout">
+        <div ng-show="page == 'welcome'" ng-include src="'views/main.html'"></div>
+        <div ng-show="page == 'home'" ng-include src="'views/menu.html'"></div>
       </ion-content>
     </ion-pane>
 
@@ -45,6 +46,10 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
+    <style>
+        .layout{
+            background: url(images/bg_launcher.png) 100% 100% no-repeat;
+        }
+    </style>
   </body>
 </html>

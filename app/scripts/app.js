@@ -13,4 +13,12 @@ angular.module('HsinchuIS', ['ionic', 'ngRoute'])
     }
   });
 })
+.controller('MainController', function($scope, $route, $routeParams, $location) {
+     // init
+     $scope.$route = $route;
+     $scope.$location = $location;
+     $scope.$routeParams = $routeParams;
+     $scope.page = 'welcome';
+     $scope.bg_image = 'bg_launcher.png';
+ })
 ;
