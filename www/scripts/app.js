@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -28,9 +28,13 @@ angular.module('HsinchuIS', ['ionic', 'ngRoute'])
           center: new google.maps.LatLng(43.07493,-89.381388),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          streetViewControl: false
+          streetViewControl: false,
+          minZoom: 8,
+          maxZoom: 8,
+          zoom: 8,
+          zoomControl: false,
+          mapTypeControl: false
       };
-
       if(!$scope.map){
         var google_map_container=$('<div></div>').css({
           width: '100%',

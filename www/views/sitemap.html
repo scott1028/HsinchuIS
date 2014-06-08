@@ -7,7 +7,7 @@
 
 		<img style="position: absolute; width: 25%; height: 20%; top: 24%; left: 37%;" src="images/dashboard_1.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" ng-click="$parent.$parent.page='near_scenery_and_store'" onclick="create_map().appendTo('#map')" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" ng-click="$parent.$parent.page='near_scenery_and_store'" onclick="$('#map').empty().append(create_map())" />
 
 		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 72%;" src="images/dashboard_3.png" />
 
