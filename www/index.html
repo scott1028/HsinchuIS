@@ -53,10 +53,12 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-    <style>
-        .scroll {
-            height: 100%;
-        }
-    </style>
+    <script>
+        // 一開始先把裝置高度算好, 不要使用 100% 避免鍵盤出現的時候畫面變形
+        $(document).ready(function(){
+            var height=$('.scroll').parent().height();
+            $('<style>.scroll {height: ' + height + 'px;}</style>').appendTo('body');
+        })
+    </script>
   </body>
 </html>

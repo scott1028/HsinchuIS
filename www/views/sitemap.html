@@ -1,28 +1,31 @@
-<div class="sitemap">
-	<div style="padding: 5px; float:left; font-size: 16pt;" ng-click="$parent.page='about'" class="icon-left ion-help"> 關於</div>
-	<div style="padding: 5px; float:right; font-size: 16pt;" ng-click="$parent.page='search'" class="icon-right ion-search"> 搜尋</div>
+<div style="height: 100%;">
+	<ion-content class="sitemap">
+		<div style="padding: 5px; float:left; font-size: 16pt;" ng-click="$parent.$parent.page='about'" class="icon-left ion-help"> 關於</div>
+		<div style="padding: 5px; float:right; font-size: 16pt;" ng-click="$parent.$parent.page='search'" class="icon-right ion-search"> 搜尋</div>
 
-	<img style="position: absolute; width: 30%; height: 15%; top: 8%; left: 35%;" src="images/dashboard_logo.png" ng-click="$parent.page='select_lang'" />
+		<img style="position: absolute; width: 30%; height: 15%; top: 8%; left: 35%;" src="images/dashboard_logo.png" ng-click="$parent.page='select_lang'" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 24%; left: 37%;" src="images/dashboard_1.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 24%; left: 37%;" src="images/dashboard_1.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 72%;" src="images/dashboard_3.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 72%;" src="images/dashboard_3.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 44%; left: 37%;" src="images/dashboard_4.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 44%; left: 37%;" src="images/dashboard_4.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 2%;" src="images/dashboard_5.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 2%;" src="images/dashboard_5.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 72%;" src="images/dashboard_6.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 72%;" src="images/dashboard_6.png" />
 
-	<img style="position: absolute; width: 25%; height: 20%; top: 64%; left: 37%;" src="images/dashboard_7.png" />
+		<img style="position: absolute; width: 25%; height: 20%; top: 64%; left: 37%;" src="images/dashboard_7.png" />
+	</ion-content>
+
+	<style>
+	    .sitemap{
+	        background: url(images/bg_menu.jpg);
+	        background-size: cover;
+	        height: 100%;
+	    }
+	</style>
 </div>
 
-<style>
-    .sitemap{
-        background: url(images/bg_menu.jpg);
-        background-size: cover;
-        height: 100%;
-    }
-</style>
