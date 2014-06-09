@@ -5,19 +5,19 @@
 
 		<img style="position: absolute; width: 30%; height: 15%; top: 8%; left: 35%;" src="images/dashboard_logo.png" ng-click="set_page('select_lang')" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 24%; left: 37%;" src="images/dashboard_1.png" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 24%; left: 37%;" src="images/dashboard_1.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" ng-click="set_page('near_scenery_and_store')" onclick="$('#data').empty().append(create_map())" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 34%; left: 2%;" src="images/dashboard_2.png" ng-click="set_page('near_scenery_and_store')" onclick="$('#data').empty().append(create_map())" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 34%; left: 72%;" src="images/dashboard_3.png" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 34%; left: 72%;" src="images/dashboard_3.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 44%; left: 37%;" src="images/dashboard_4.png" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 44%; left: 37%;" src="images/dashboard_4.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 2%;" src="images/dashboard_5.png" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 54%; left: 2%;" src="images/dashboard_5.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 54%; left: 72%;" src="images/dashboard_6.png" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 54%; left: 72%;" src="images/dashboard_6.png" />
 
-		<img style="position: absolute; width: 25%; height: 20%; top: 64%; left: 37%;" src="images/dashboard_7.png" ng-click="set_page('near_search')" />
+		<img class="btn" style="position: absolute; width: 25%; height: 20%; top: 64%; left: 37%;" src="images/dashboard_7.png" ng-click="set_page('near_search')" />
 	</ion-content>
 
 	<style>
@@ -27,5 +27,15 @@
 	        height: 100%;
 	    }
 	</style>
+	<script>
+		// $('img.btn').click(function(e){
+		// 	if($(e.target).attr('src').indexOf('_pressed.png') != -1){
+		// 		$(e.target).attr('src', $(e.target).attr('src').replace('_pressed.png', '.png'))
+		// 	}
+		// 	else if($(e.target).attr('src').indexOf('.png') != -1){
+		// 		$(e.target).attr('src', $(e.target).attr('src').replace('.png', '_pressed.png'))
+		// 	}
+		// })
+	</script>
 </div>
 

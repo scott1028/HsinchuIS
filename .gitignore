@@ -5,4 +5,5 @@ node_modules
 www/bower_components
 coverage
 platforms
-plugins
+plugins/android.json
+
